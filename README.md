@@ -1,8 +1,8 @@
-# NanoDet on Raspberry Pi 4
-![output image]( https://qengineering.eu/images/JamesNanoDet_RPi.jpg )
-## NanoDet with the ncnn framework. <br/>
+# NanoDet Plus on Raspberry Pi 4
+![output image]( https://qengineering.eu/images/Parking_out_NanoDetPlus.jpg )
+## NanoDet Plus with the ncnn framework. <br/>
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)<br/><br/>
-Paper: https://arxiv.org/pdf/1912.02424.pdf<br/><br/>
+Paper: https://zhuanlan.zhihu.com/p/306530300 (Chinese)<br/><br/>
 Special made for a bare Raspberry Pi 4 see [Q-engineering deep learning examples](https://qengineering.eu/deep-learning-examples-on-raspberry-32-64-os.html)
 
 ------------
@@ -10,7 +10,8 @@ Special made for a bare Raspberry Pi 4 see [Q-engineering deep learning examples
 ## Benchmark.
 | Model  | size | objects | mAP | Jetson Nano 2015 MHz | RPi 4 64-OS 1950 MHz |
 | ------------- | :-----:  | :-----:  | :-----:  | :-------------:  | :-------------: |
-| [NanoDet](https://github.com/Qengineering/NanoDet-ncnn-Raspberry-Pi-4) | 320x320 | 80 | 20.6  |  28.2 FPS | **13.0 FPS** |
+| [NanoDet](https://github.com/Qengineering/NanoDet-ncnn-Raspberry-Pi-4) | 320x320 | 80 | 20.6  |  28.2 FPS | 13.0 FPS |
+| [NanoDet Plus](https://github.com/Qengineering/NanoDetPlus-ncnn-Raspberry-Pi-4) | 416x416 | 80 | 30.4  |  15.4 FPS | **5.0 FPS** |
 | [YoloFastestV2](https://github.com/Qengineering/YoloFastestV2-ncnn-Raspberry-Pi-4) | 352x352  | 80 | 24.1 |  38.4 FPS | 18.8 FPS |
 | [YoloV2](https://github.com/Qengineering/YoloV2-ncnn-Raspberry-Pi-4) | 416x416  | 20 | 19.2 |  10.1 FPS | 3.0 FPS |
 | [YoloV3](https://github.com/Qengineering/YoloV3-ncnn-Raspberry-Pi-4) | 352x352 tiny | 20 | 16.6 | 17.7 FPS | 4.4 FPS |
@@ -36,28 +37,27 @@ To run the application, you have to:
 To extract and run the network in Code::Blocks <br/>
 $ mkdir *MyDir* <br/>
 $ cd *MyDir* <br/>
-$ wget https://github.com/Qengineering/NanoDet-ncnn-Raspberry-Pi-4/archive/refs/heads/main.zip <br/>
+$ wget https://github.com/Qengineering/NanoDetPlus-ncnn-Raspberry-Pi-4/archive/refs/heads/main.zip <br/>
 $ unzip -j master.zip <br/>
 Remove master.zip, LICENSE and README.md as they are no longer needed. <br/> 
 $ rm master.zip <br/>
 $ rm LICENSE <br/>
 $ rm README.md <br/> <br/>
 Your *MyDir* folder must now look like this: <br/> 
-James.mp4 <br/>
 parking.jpg <br/>
 busstop.jpg <br/>
-NanoDet.cpb <br/>
-NanoDet.cpp <br/>
-nanodet_m.bin <br/>
-nanodet_m.param <br/>
+include <br/>
+source <br/>
+nanodet-plus-m_416.bin <br/>
+nanodet-plus-m_416.param <br/>
 
 ------------
 
 ## Running the app.
 To run the application load the project file NanoDet.cbp in Code::Blocks. More info or<br/> 
 if you want to connect a camera to the app, follow the instructions at [Hands-On](https://qengineering.eu/deep-learning-examples-on-raspberry-32-64-os.html#HandsOn).<br/><br/>
-Many thanks to [nihui](https://github.com/nihui/) again!<br/><br/>
-![output image]( https://qengineering.eu/images/test_busNanoDet.jpg )
+Many thanks to [RangiLyu]([https://github.com/nihui/](https://github.com/RangiLyu/nanodet)<br/><br/>
+![output image]( https://qengineering.eu/images/Bus_out_NanoDetPlus.jpg )
 
 ------------
 
