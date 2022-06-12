@@ -22,7 +22,7 @@
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="1 parking.jpg" />
+				<Option parameters="parking.jpg" />
 				<Compiler>
 					<Add option="-O3" />
 					<Add directory="include" />
