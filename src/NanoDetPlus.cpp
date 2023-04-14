@@ -71,6 +71,7 @@ NanoDet::NanoDet(const char* param, const char* bin, int Size)
 #endif
     Net->opt.use_vulkan_compute = hasGPU && useGPU;
     Net->opt.use_fp16_arithmetic = true;
+    Net->opt.num_threads=4;
     Net->load_param(param);
     Net->load_model(bin);
     Fsize = Size;
